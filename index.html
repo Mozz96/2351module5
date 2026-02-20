@@ -7,9 +7,33 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <script src="./js/app.js"></script>
+        <h3>Below is an example of editing CSS through DOM manipulation!</h3>
+        <p id="hahaYes">Look at me go, I'm green and comically large!</p>
+
+        <h3>Here's an example of changing CSS based on variables!</h3>
+
+        <p class="oneEighty">I'm looking a little upside down right now!</p>
+
+
+        <script src="./js/app.js">
+
+       
+
+        </script>
+        <script>
+            document.getElementById("hahaYes").style.color = "green";
+            document.getElementById("hahaYes").style.fontSize = "larger";
+        </script>
+
+        <script>
+            let downUnder = document.querySelector(".oneEighty");
+            downUnder.classList.add("upsideDown");
+
+        </script>
+
+        
     </body>
 </html>
